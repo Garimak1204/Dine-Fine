@@ -1,0 +1,574 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.col{
+    background-size: cover;
+}
+.image{
+    height:40vh;
+    object-fit: cover;
+    width:100%;
+    object-position: center;
+}
+.b{
+    height:10vh;
+    font-family: 'Kaushan Script', cursive;
+}
+.image1{
+    background-size: cover;
+    height:100vh;
+    width:100%;
+    object-fit: cover;
+}
+.column{
+    height:100vh;
+}
+button{
+    background: none;
+    color:#ffa260;
+    border:2px solid;
+    padding:1em 2em;
+    font-size:1em;
+    transition:all 0.25s;
+}
+button:hover{
+    border-color: #f1ff5c;
+    color:white;
+    box-shadow:0 0.5em 0.5em -0.4em #f1ff5c;
+    transform:translateY(-0.25em);
+    cursor: pointer;
+}
+.overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background-color:black;
+    opacity: 0.8;
+}
+.type{
+    width:100%;
+    height:50vh;
+    object-fit: cover;
+}
+#Main_course{
+    transition:all 0s ease 0s;
+}
+.Mcimage{
+    background-color: black;
+    position: absolute;
+    top:0;
+    left:0;
+    height:50vh;
+    width:49.5vw;
+    opacity:0.7;
+}
+.Mctext{
+   position: absolute;
+   top:32vh;
+   left:12vw;
+   font-family: 'Kaushan Script', cursive;
+}
+.Mcbutton{
+    position: absolute;
+    top:40vh;
+    left:15vw;
+    display: none;
+}
+#Main_course:hover .Mctext{
+    transform:translateY(-3em);
+    cursor: pointer;
+}
+#Main_course:hover button{
+    transform:translateY(-5em);
+    cursor: pointer;
+    display: block;
+}
+#Main_course:hover .Mcimage{
+    opacity: 0.9;
+}
+#bread{
+    transition:all 0s ease 0s;
+}
+.bimage{
+    background-color:white;
+    position: absolute;
+    top:0;
+    right:0;
+    height:50vh;
+    width:49.2vw;
+    opacity:0.2;
+}
+.btext{
+   position: absolute;
+   top:31vh;
+   right:20vw;
+   font-family: 'Kaushan Script', cursive;
+}
+.bbutton{
+    position: absolute;
+    top:40vh;
+    right:15vw;
+    color: black;
+    border: 4px solid;
+    display: none;
+}
+#bread:hover .btext{
+    transform:translateY(-3em);
+    cursor: pointer;
+}
+#bread:hover button{
+    transform:translateY(-5em);
+    cursor: pointer;
+    display: block;
+}
+#bread:hover .bimage{
+    opacity: 0.5;
+    box-shadow: blue;
+}
+.bbutton:hover{
+    box-shadow:0 0.5em 0.5em -0.4em black;
+    border-color:black;
+    color:indigo;
+}
+#side_dish{
+    transition:all 0s ease 0s;
+}
+.simage{
+    background-color: black;
+    position: absolute;
+    bottom:0;
+    right:0;
+    height:50vh;
+    width:49.2vw;
+    opacity:0.8;
+}
+.stext{
+   position: absolute;
+   bottom:9vh;
+   right:19vw;
+   font-family: 'Kaushan Script', cursive;
+}
+.sbutton{
+    position: absolute;
+    bottom:0;
+    right:15vw;
+    display: none;
+}
+#side_dish:hover .stext{
+    transform:translateY(-3em);
+    cursor: pointer;
+}
+#side_dish:hover button{
+    transform:translateY(-5em);
+    cursor: pointer;
+    display: block;
+}
+#side_dish:hover .simage{
+    opacity: 0.9;
+}
+#marinade{
+    transition:all 0s ease 0s;
+}
+.mimage{
+    background-color:white;
+    position: absolute;
+    bottom:0;
+    left:0;
+    height:50vh;
+    width:49.5vw;
+    opacity:0.2;
+}
+.mtext{
+   position: absolute;
+   bottom:9vh;
+   left:12vw;
+   font-family: 'Kaushan Script', cursive;
+}
+.mbutton{
+    position: absolute;
+    bottom:0;
+    left:15vw;
+    color: black;
+    border: 4px solid;
+    display: none;
+}
+#marinade:hover .mtext{
+    transform:translateY(-3em);
+    cursor: pointer;
+}
+#marinade:hover button{
+    transform:translateY(-5em);
+    cursor: pointer;
+    display: block;
+}
+#marinade:hover .mimage{
+    opacity: 0.5;
+    box-shadow: blue;
+}
+.mbutton:hover{
+    box-shadow:0 0.5em 0.5em -0.4em black;
+    border-color:black;
+    color:indigo;
+}
+/* cuisine 2nd page */
+
+#breakfast{
+    transition:all 0s ease 0s;
+}
+.bfimage{
+    background-color: black;
+    position: absolute;
+    top:0;
+    left:0;
+    height:50vh;
+    width:49.5vw;
+    opacity:0.7;
+}
+.bftext{
+   position: absolute;
+   top:32vh;
+   left:12vw;
+   font-family: 'Kaushan Script', cursive;
+}
+.bfbutton{
+    position: absolute;
+    top:40vh;
+    left:15vw;
+    display: none;
+}
+#breakfast:hover .bftext{
+    transform:translateY(-3em);
+    cursor: pointer;
+}
+#breakfast:hover button{
+    transform:translateY(-5em);
+    cursor: pointer;
+    display: block;
+}
+#breakfast:hover .bfimage{
+    opacity: 0.9;
+}
+#fingerfood{
+    transition:all 0s ease 0s;
+}
+.fimage{
+    background-color:white;
+    position: absolute;
+    top:0;
+    right:0;
+    height:50vh;
+    width:49.2vw;
+    opacity:0.2;
+}
+.ftext{
+   position: absolute;
+   top:31vh;
+   right:20vw;
+   font-family: 'Kaushan Script', cursive;
+}
+.fbutton{
+    position: absolute;
+    top:40vh;
+    right:15vw;
+    color: black;
+    border: 4px solid;
+    display: none;
+}
+#fingerfood:hover .ftext{
+    transform:translateY(-3em);
+    cursor: pointer;
+}
+#fingerfood:hover button{
+    transform:translateY(-5em);
+    cursor: pointer;
+    display: block;
+}
+#fingerfood:hover .fimage{
+    opacity: 0.5;
+    box-shadow: blue;
+}
+.fbutton:hover{
+    box-shadow:0 0.5em 0.5em -0.4em black;
+    border-color:black;
+    color:indigo;
+}
+#dessert{
+    transition:all 0s ease 0s;
+}
+.dimage{
+    background-color: black;
+    position: absolute;
+    bottom:0;
+    right:0;
+    height:50vh;
+    width:49.2vw;
+    opacity:0.8;
+}
+.text{
+    font-family: 'Kaushan Script', cursive; 
+}
+.dtext{
+   position: absolute;
+   bottom:9vh;
+   right:19vw;
+   font-family: 'Kaushan Script', cursive;
+}
+.dbutton{
+    position: absolute;
+    bottom:0;
+    right:15vw;
+    display: none;
+}
+#dessert:hover .dtext{
+    transform:translateY(-3em);
+    cursor: pointer;
+}
+#dessert:hover button{
+    transform:translateY(-5em);
+    cursor: pointer;
+    display: block;
+}
+#dessert:hover .dimage{
+    opacity: 0.9;
+}
+#soup{
+    transition:all 0s ease 0s;
+}
+.soupimage{
+    background-color:white;
+    position: absolute;
+    bottom:0;
+    left:0;
+    height:50vh;
+    width:49.5vw;
+    opacity:0.2;
+}
+.souptext{
+   position: absolute;
+   bottom:9vh;
+   left:12vw;
+   font-family: 'Kaushan Script', cursive;
+}
+.soupbutton{
+    position: absolute;
+    bottom:0;
+    left:15vw;
+    color: black;
+    border: 4px solid;
+    display: none;
+}
+#soup:hover .souptext{
+    transform:translateY(-3em);
+    cursor: pointer;
+}
+#soup:hover button{
+    transform:translateY(-5em);
+    cursor: pointer;
+    display: block;
+}
+#soup:hover .soupimage{
+    opacity: 0.5;
+    box-shadow: blue;
+}
+.soupbutton:hover{
+    box-shadow:0 0.5em 0.5em -0.4em black;
+    border-color:black;
+    color:indigo;
+}
+
+/* cuisine 3nd page */
+
+#salad{
+    transition:all 0s ease 0s;
+}
+.saladimage{
+    background-color: black;
+    position: absolute;
+    top:0;
+    left:0;
+    height:50vh;
+    width:49.5vw;
+    opacity:0.7;
+}
+.saladtext{
+   position: absolute;
+   top:32vh;
+   left:12vw;
+   font-family: 'Kaushan Script', cursive;
+}
+.saladbutton{
+    position: absolute;
+    top:40vh;
+    left:15vw;
+    display: none;
+}
+#salad:hover .saladtext{
+    transform:translateY(-3em);
+    cursor: pointer;
+}
+#salad:hover button{
+    transform:translateY(-5em);
+    cursor: pointer;
+    display: block;
+}
+#salad:hover .saladimage{
+    opacity: 0.9;
+}
+#drink{
+    transition:all 0s ease 0s;
+}
+.drinkimage{
+    background-color:white;
+    position: absolute;
+    top:0;
+    right:0;
+    height:50vh;
+    width:49.2vw;
+    opacity:0.2;
+}
+.drinktext{
+   position: absolute;
+   top:31vh;
+   right:20vw;
+   font-family: 'Kaushan Script', cursive;
+}
+.drinkbutton{
+    position: absolute;
+    top:40vh;
+    right:15vw;
+    color: black;
+    border: 4px solid;
+    display: none;
+}
+#drink:hover .drinktext{
+    transform:translateY(-3em);
+    cursor: pointer;
+}
+#drink:hover button{
+    transform:translateY(-5em);
+    cursor: pointer;
+    display: block;
+}
+#drink:hover .drinkimage{
+    opacity: 0.5;
+    box-shadow: blue;
+}
+.drinkbutton:hover{
+    box-shadow:0 0.5em 0.5em -0.4em black;
+    border-color:black;
+    color:indigo;
+}
+#bev{
+    transition:all 0s ease 0s;
+}
+.bevimage{
+    background-color: black;
+    position: absolute;
+    bottom:0;
+    right:0;
+    height:50vh;
+    width:49.2vw;
+    opacity:0.8;
+}
+.bevtext{
+   position: absolute;
+   bottom:9vh;
+   right:19vw;
+   font-family: 'Kaushan Script', cursive;
+}
+.bevbutton{
+    position: absolute;
+    bottom:0;
+    right:15vw;
+    display: none;
+}
+#bev:hover .bevtext{
+    transform:translateY(-3em);
+    cursor: pointer;
+}
+#bev:hover button{
+    transform:translateY(-5em);
+    cursor: pointer;
+    display: block;
+}
+#bev:hover .bevimage{
+    opacity: 0.9;
+}
+#snack{
+    transition:all 0s ease 0s;
+}
+.snackimage{
+    background-color:white;
+    position: absolute;
+    bottom:0;
+    left:0;
+    height:50vh;
+    width:49.5vw;
+    opacity:0.2;
+}
+.snacktext{
+   position: absolute;
+   bottom:9vh;
+   left:12vw;
+   font-family: 'Kaushan Script', cursive;
+}
+.snackbutton{
+    position: absolute;
+    bottom:0;
+    left:15vw;
+    color: black;
+    border: 4px solid;
+    display: none;
+}
+#snack:hover .snacktext{
+    transform:translateY(-3em);
+    cursor: pointer;
+}
+#snack:hover button{
+    transform:translateY(-5em);
+    cursor: pointer;
+    display: block;
+}
+#snack:hover .snackimage{
+    opacity: 0.5;
+    box-shadow: blue;
+}
+.snackbutton:hover{
+    box-shadow:0 0.5em 0.5em -0.4em black;
+    border-color:black;
+    color:indigo;
+}
+.MealType{
+    position: absolute;
+    top:45vh;
+    left:30vw;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 900px;
+}
+#main{
+    background-color:black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:left bottom;
+    max-width:100vw;
+    min-height:100vh;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.contain{
+    width: 90%;
+    max-width: 100vw;
+    margin: 5px auto;
+}
+.endButton{
+    display: block;
+}
+.endButton button{
+    margin: 15px;
+    display:none;
+}
+
